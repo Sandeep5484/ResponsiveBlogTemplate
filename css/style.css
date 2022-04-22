@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+.navigation {
+  font-family: var(--font1);
+  height: 90px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(104, 99, 99, 0.5); */
+  background: #bdc3c7; 
+ background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+ background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+#iconbar{
+  color: black;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+#iconbar:hover{
+  color: orange;
+}
+.social{
+  margin-left: 200px;
+}
+
+.nav-left {
+  display: flex;
+}
+.nav-right{
+  padding-right: 40px;
+}
+
+.nav-left span {
+  font-size: 0px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 23px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.65;
+  background-size: cover;
+  /* background-color: rgb(226, 204, 156); */
+  background: #d9a7c7;  
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7); 
+  background: linear-gradient(to right, #fffcdc, #d9a7c7); 
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 360px;
+  border: 1px solid black;
+  border-radius: 200px;
+}
+
+.home-articles {
+  padding: 20px;
+  position: relative;
+  width: 860px;
+}
+
+.home-article {
+  display: flex;
+  margin-top: 40px;
+  width: 780px;
+  background-color: rgba(104, 99, 99, 0.5);
+}
+
+.home-article img {
+  width: 338px;
+}
+
+.home-article-content {
+  align-self: center;
+  margin: 30px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+/* .home-articles{} */
+.right_sub__div {
+  padding: 2.5rem 1rem;
+}
+.right_div{
+  padding: 10px;
+  margin-left: 90px;
+  background-color: #e9e4e6;
+  width: 390px;
+}
+
+/******advertisement style start****/
+.advertise_img {
+  width: 21rem;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+  background-color: rgb(218, 215, 215);
+}
+
+/*left side icons start*/
+.fab {
+  color: #000;
+}
+
+.fab:hover {
+  color: #d0cecf;
+  transform: rotate(360deg);
+}
+
+.footer {
+  height: 60px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  margin-top: 3px;
+}
+
+.container-fluid{
+  display:flex;
+  background-color: #e9e4e6;
+}
+.right_sub__div {
+  padding: 1.5rem 1rem;
+  background: #fff;
+}
+.right_sub__div a {
+  margin: 11px;
+}
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.right_div_post {
+  width: 370px;
+  margin-top: 40px  ;
+}
+.shadow {
+  box-shadow: 0 .6rem 1rem rgba(0,0,0,.15)!important;
+}
+.right_div__title {
+  background-color: rgba(104, 99, 99, 0.5);
+    height: 55px;
+    padding: 10px;
+    font-size: 16px;
+}
+/*blog tags start*/
+.tags_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4rem, 8rem));
+  grid-gap: .5rem;
+}
+
+.tags_main a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 170%;
+  font-weight: lighter;
+  color: white;
+  padding: 5px;
+  background: #6c757d;
+  transition: var(--eff);
+}
+
+.tags_main a:hover {
+  color:black;
+  background: #cc8b53;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
